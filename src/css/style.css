@@ -1,0 +1,412 @@
+* {
+	margin: 0;
+    padding: 0;
+
+}
+/* Main Menu */
+#main-menu {
+    padding: 20px;
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    right:0; 
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#main-menu ul {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+ 
+}
+
+#main-menu li {
+    display: inline-block;
+    list-style-type: outside;
+    margin: 8px 16px;
+}
+
+#main-menu a {
+    padding:8px 12px;
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+
+#main-menu a::before,
+#main-menu a::after{
+    width:14px;
+    height: 14px;
+    content: "";
+    position: absolute;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+
+#main-menu a:hover{
+    color: gold;
+}
+
+#main-menu a::after{
+    right: 0;
+    top:0;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    transform: translate(-100%, 50%);
+}
+
+#main-menu a::before{
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: translate(100%, -50%);
+}
+
+#main-menu a:hover::before,
+#main-menu a:hover::after{
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+
+
+
+/* main-content */
+.c1{
+    width: 100%;
+  }
+  
+  @media (min-width: 500px){
+    .c1 {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (min-width: 800px){
+    .c1 {
+      font-size: 2em;
+    }
+}
+
+#main-content {
+    font-family: 'Long Cang', cursive;
+    font-size: 50px;
+}
+#main-content::after{
+    background: url(../images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding:10em 0em;
+    content: "";
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    width:100%;
+    height:57%;
+}
+
+
+
+/* cloud-block */
+#cloud-block-1 .cloudtext{
+    background: url(../images/cloud.png);
+    background-size:cover;
+    text-align: center;
+    line-height: 208px;
+    width:300px;
+    height:200px;
+    position: absolute;
+    left:20%;
+    top:12%;
+}
+
+#cloud-block-1 .cloudtext:hover{
+    background: url(../images/sun.png);
+    background-size:cover; 
+    position: relative;
+    width:180px;
+    height:180px;
+    text-indent:-9999px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    left:20%;
+    top:12%;
+    cursor: none;
+}
+
+#cloud-block-2 .cloudtext{
+    background: url(../images/cloud.png);
+    background-size:cover;
+    text-align: center;
+    line-height: 208px;
+    width:300px;
+    height:200px;
+    position: absolute;
+    left:10%;
+    top:60%;
+}
+
+#cloud-block-2 .cloudtext:hover{
+    background: url(../images/smoke-4387774_1920.png);
+    background-size:cover; 
+    position: relative;
+    width:300px;
+    height:200px;
+    text-indent:-9999px;
+    position: absolute;
+    left:10%;
+    top:60%;
+    cursor: none;
+}
+
+#cloud-block-3 .cloudtext{
+    background: url(../images/cloud.png);
+    background-size:cover;
+    text-align: center;
+    line-height: 208px;
+    width:300px;
+    height:200px;
+    position: absolute;
+    left:70%;
+    top:55%;
+}
+
+#cloud-block-3 .cloudtext:hover{
+    background: url(../images/apple.png);
+    background-size:cover; 
+    position: relative;
+    width:200px;
+    height:200px;
+    text-indent:-9999px;
+    position: absolute;
+    left:70%;
+    top:55%;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: none;
+}
+
+#cloud-block-4 .cloudtext{
+    background: url(../images/cloud.png);
+    background-size:cover;
+    text-align: center;
+    line-height: 208px;
+    width:300px;
+    height:200px;
+    position: absolute;
+    left:65%;
+    top:5%;
+}
+
+
+#cloud-block-4 .cloudtext:hover{
+    background: url(../images/beer.png);
+    background-size:contain; 
+    position: relative;
+    width:300px;
+    height:200px;
+    text-indent:-9999px;
+    position: absolute;
+    left:65%;
+    top:5%;
+    cursor: none;
+
+}
+
+
+/* moon-image */
+
+#moon-image img{
+    width: 30%;
+    position: absolute;
+    top:15%;
+    left:30%;
+}
+
+
+/* story page */
+
+/* instruction-1 */
+
+#instruction-1{
+    background: url(../images/bee.png);
+    padding-top: 1em; 
+    background-color: #FFEFD5;
+    width: 100%;
+    height: 920px;
+    background-size:cover;
+    font-family: 'Chilanka', cursive;
+}
+#game-tex-1{
+    /* margin-top: 8em; */
+    margin-top: 10%;
+    margin-left: 15%;
+    height: 180px;
+    width: 500px;
+    display: inline-block;
+    padding: 1px;
+    border-radius: 40px;
+    background: -webkit-linear-gradient( right, #fff 0%, #fff 100%), -webkit-linear-gradient( right, #99d6ee 0%, #6362e1 100%);
+    background-clip: content-box, padding-box;
+
+}
+
+#game-tex-1 p{
+    /* margin-top:30px; */
+    text-align: center;
+    padding-top: 8%;
+    font-size: 25px;
+    color:black;
+    line-height: 1em;
+
+}
+
+#user-text-1 button{
+    /* margin-top: 10em; */
+    margin-top: 18%;
+    margin-left: 60%;
+    height: 90px;
+    display: inline-block;
+    padding: 1px;
+    border-radius: 40px;
+    width: 150px;
+    background: -webkit-linear-gradient( right, #fff 0%, #fff 100%), -webkit-linear-gradient( right, #99d6ee 0%, #6362e1 100%);
+    background-clip: content-box, padding-box;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+    line-height: 3.5em;
+    font-family: 'Chilanka', cursive;
+}
+
+#user-text-1 button:hover {
+    color:white;
+    cursor: pointer;
+    background:plum;
+}
+
+/* instruction-2 */
+#instruction-2{
+    background: url(../images/bee.png);
+    padding-top: 1em; 
+    background-color:#FFE4C4;
+    width: 100%;
+    height: 920px;
+    background-size:cover;
+    font-family: 'Chilanka', cursive;
+}
+
+#game-text-2{
+    margin-top: 10%;
+    margin-left: 15%;
+    height: 180px;
+    width: 500px;
+    display: inline-block;
+    border-radius: 40px;
+    background: -webkit-linear-gradient( right, #fff 0%, #fff 100%), -webkit-linear-gradient( right, #99d6ee 0%, #6362e1 100%);
+    background-clip: content-box, padding-box;
+ 
+}
+
+#game-text-2 p{
+    text-align: center;
+    padding-top: 1.6em;
+    font-size: 25px;
+}
+
+
+#user-text-2 button{
+    margin-top: 18%;
+    margin-left: 60%;
+    height: 90px;
+    display: inline-block;
+    padding-top: 1.1px;
+    border-radius: 40px;
+    width: 150px;
+    background: -webkit-linear-gradient( right, #fff 0%, #fff 100%), -webkit-linear-gradient( right, #99d6ee 0%, #6362e1 100%);
+    background-clip: content-box, padding-box;
+
+    font-family: 'Chilanka', cursive;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+    line-height: 3.5em;
+}
+
+#user-text-2 button:hover {
+    color:white;
+    cursor: pointer;
+    background:plum;
+}
+
+
+
+/* instruction-3 */
+
+#instruction-3{
+    background: url(../images/bee.png);
+    padding-top: 1em; 
+    background-color:#FFDEAD;
+    width: 100%;
+    height: 920px;
+    background-size:cover;
+    font-family: 'Chilanka', cursive;
+}
+
+
+#game-text-3{
+    margin-top: 8em;
+    margin-left: 15%;
+    height: 180px;
+    width: 500px;
+    display: inline-block;
+    padding: 1px;
+    border-radius: 40px;
+    background: -webkit-linear-gradient( right, #fff 0%, #fff 100%), -webkit-linear-gradient( right, #99d6ee 0%, #6362e1 100%);
+    background-clip: content-box, padding-box;
+ 
+}
+
+#game-text-3 p{
+    padding-top: 16%;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+#user-text-3 a{
+    margin-top: 18%;
+    margin-left: 60%;
+    height: 90px;
+    display: inline-block;
+    padding: 1px;
+    border-radius: 40px;
+    width: 150px;
+    background: -webkit-linear-gradient( right, #fff 0%, #fff 100%), -webkit-linear-gradient( right, #99d6ee 0%, #6362e1 100%);
+    background-clip: content-box, padding-box;
+
+}
+
+#user-text-3 a{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+    line-height: 1.5em;
+}
+
+#user-text-3 a:hover {
+    color:white;
+    cursor: pointer;
+    background:plum;
+}

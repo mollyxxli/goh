@@ -1,0 +1,140 @@
+body::after{
+    background: url(../images/library-background.jpg);
+    background-size: cover;
+    content: "";
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 1.5em;
+}
+
+
+
+
+#records{
+    margin: auto;
+    margin-top: 7%;
+    height: 400px;
+    width: 700px;
+    position: relative;
+    border: 2px solid black;
+    display: block;    
+}
+
+#records:hover{
+    cursor: pointer;
+}
+#record-0, #record-1, #record-2, #record-3{
+    border: 2px solid blueviolet;
+    height: 50px;
+    width: 630px;
+    margin-left: 2em;
+    margin-top: 2em;
+    text-align: center;
+   
+}
+
+#record-0:hover, #record-1:hover, #record-2:hover, #record-3:hover{
+    border: #673ab7 5px solid;
+}
+#record-0 a{
+    line-height: 50px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#record-1 a{
+    line-height: 50px;
+    background-color:white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#record-2 a{
+    line-height: 50px;
+    background-color:white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#record-3 a{
+    line-height: 50px;
+    background-color:white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#record-0{
+    background: url(../images/smoking.png);
+    background-size: contain;
+
+}
+
+
+#record-1{
+    background: url(../images/flue.png);
+    background-size: contain;
+ 
+}
+
+#record-2{
+    background: url(../images/health.png);
+    background-size: contain;
+}
+
+
+
+#record-3{
+    background: url(../images/equipment.png);
+    background-size: contain;
+} 
+
+
+
+
+/* back-to-homepage */
+
+#go-home {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background:linear-gradient(deepskyblue,CornflowerBlue);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+} 
+
+#home {
+    color: white;
+}
+
+
+#go-home input {
+    background: none;
+    border: none;
+}
+
+#home:hover {
+    color:black;
+    cursor: pointer;
+}
