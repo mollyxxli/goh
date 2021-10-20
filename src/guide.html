@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>GOT Guide</title>
+        <link rel="stylesheet" href="css/guide.css">
+    </head>
+
+    <body id="body">
+        <!--Heading-->
+        <div id="Heading">
+            <h1>- Guide -</h1>
+            <!--background?-->
+        </div>
+        
+
+        <!--Main-->
+        <section id = "aboutUs">
+            <div class="div1"> 
+                <h2 class = "concept"> About GOT</h2>
+            </div>
+            <div class='div2'>
+                <p>Game of Health , aka GOT.</p>
+                <br>
+                <p>is a Rouguelike game website for teengaers to have better understanding of contemporary health issues</p>    
+            </div>
+            <div class='div3'>
+                <img src ="images/Loading 2.gif" alt="loading">
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class='div1'>             
+                <h2 class = "concept">Homepage Navigation</h2>
+            </div>
+            <div class="div2">
+                <p>
+                    Instruction: quick guide on how to play the game<br><br>
+                    Library: API details and extended information<br><br>
+                    Start: start game right away<br><br>
+                    History: list of important information in the game <br><br>
+                    Exist: Leave the game
+                </p>
+            </div>
+            <div class="div3">
+                <img src="images/homepage.PNG" alt="Home">
+            </div>
+        </section>
+
+        <section id = "section2">
+            <div class="div1">
+                <h2 class = "concept">4 Attibutes</h2>
+            </div>
+            <div class="div2">
+                <li>Health - Your health condition through the game</li> 
+                <br>
+                <li>Wealth - Your money usage on different cases</li>
+                <br>
+                <li>Pressure - sress you are taken at different stages</li>
+                <br>
+                <li>Social-Reliation - Relationship with other people</li>
+            </div>  
+            <div class="div3">
+                <img src="images/Scoreboard.PNG" alt="Scoreboard" >
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="div1">
+                <h2>Ground Rules</h2>
+            </div>
+            <div class="div2">
+            <p><span id="dots">
+                    1. The changing values on attributes are determined by the law of addiction and subtraction. 
+                    <br>
+                    <br>
+                    2. The value change range is 0 to 2
+            </span>
+                <span id="more">
+                3. When the value turns red, it is warning you that you are close to fail the game
+                <br><br>
+                4. If Social-relation or Pressure reach 10, you fail the game
+                <br><br>
+                5. If Health or Wealth reach the maximum value, there is no negative side effect and it will stop incrementing
+                <br><br>
+                6. Users are able to turn on/off the background music
+            </span></p>
+            </div>
+            
+            <div class="div3">
+                <button type="button" id="read" onclick="read()" 
+                style="outline: none;box-shadow: inset 0 1px 0 #80B0FB;color:white; background-color:violet;border-radius: 40px;">
+                Read More</button>
+            </div>
+
+        </section>
+
+        
+        
+
+        <section id ="section4">
+            <div class="div1">
+                <h2 class = "concept">Game Scenarios</h2>
+            </div>
+            <div class="div2">
+            <p>Users will experience a variety of interesting stories, ranging from topics on
+                 <a href="Instruction.html#sunburn">Sunburn</a>, 
+                 <a href="Instruction.html#alcohol">Alcohole Abuse</a>,
+                 <a href="Instruction.html#season-flu">Season Flu</a>,
+                 <a href="Instruction.html#junk-food">Junk Food</a>,
+                 <a href="Instruction.html#smoking">Smoking</a>,
+                 <a href="Instruction.html#mental-health">Mental Health</a></p>
+            </div>
+            <div class="div3">
+
+            </div>
+            </section> 
+
+        <section id ="section5">
+            <a href ="index.html">
+                <input type="button" Value="I understand the Instruction!" onclick="window.location.href('index.html')">
+            </a>
+        </section>
+         
+
+        <script type="text/javascript">
+            var i=0;
+            function read(){
+                if(!i){
+                    document.getElementById("more").style.display = 'inline';
+                    document.getElementById("read").innerHTML = "Read Less";
+                    document.getElementById("section3").style.height = "100%";
+                    document.getElementById("body").style.height = "1500px";
+                    i =1;
+                }
+                else{
+                    document.getElementById("more").style.display = 'none';
+                    document.getElementById("dots").style.display = 'inline';
+                    document.getElementById("read").innerHTML = "Read More";
+                    document.getElementById("section3").style.height= "30%";
+                    document.getElementById("body").style.height = "1200px";
+                    i =0;
+                }
+            }
+        </script>
+        
+    
+    </body>
+</html>

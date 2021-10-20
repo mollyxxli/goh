@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ch">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/game.css">
+    <head>
+        <title>Create your character</title>
+
+        
+
+    </head>
+    <body>
+        <section id="bar">
+            <div id="health">
+                <img src="images/heart-health.png">
+                <h1>0/10</h1>               
+            </div>
+
+            <div id="wealth">
+                <img src="images/wealth.png">
+                <h1>5/10</h1>  
+            </div>
+
+            <div id="pressure">
+                <img src="images/pressure.png">
+                <h1>8/10</h1>  
+            </div>
+
+            <div id="solar_relation">
+                <img src="images/relationship.png">
+                <h1>5/10</h1>  
+            </div>
+
+        </section>
+
+        <section id="main_body">
+            <div id="head">
+                <h2>You fail the game because the health become 0, you got sunburn and frostbite, keep that in mind, you can have a better performance next time.
+                </h2>
+            </div>
+
+            <div id="picture">
+                <img src="images/end.png">
+            </div>
+
+            <div id="choose_box">
+                <div id="choose_a">
+                        <!-- <h2><b>Back to HomePage</b>
+                        </h2> -->
+                        <a href="index.html" class="btn btn--stripe">Back to HomePage</a>
+                </div>
+                <div id="choose_b">
+                        <!-- <h2>Try again  
+                        </h2> -->
+                        <a href="S1_1.html" class="btn btn--stripe">Try again</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <script type="text/javascript">
+            var choose_a = document.getElementById("choose_a");
+            var choose_b = document.getElementById("choose_b");
+
+            choose_a.onclick = function(){
+                window.location.href="index.html";
+            }
+
+            choose_b.onclick = function(){
+                window.location.href="S1_1.html";
+            }         
+        </script>
+    </body>
+    
+   
+
+</html>

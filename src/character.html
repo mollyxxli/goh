@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ch">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/character.css">
+    <head>
+        <title>Create your character</title>
+
+        
+
+    </head>
+    <body>
+        <section>
+                
+            <h1>Create your character below</h1>
+
+            <div class="gender">               
+                <img src="images/boy.png" id="boy">
+                <img src="images/girl1234.png" id="girl">                           
+            </div>
+
+            <form>
+                <input type="text" name=" " placeholder="character's name" id="name">
+            </form>
+
+            <div id="confirm">
+                <a onclick="showName()"  href="Story-instruction.html">
+                    Confirm
+                </a>   
+
+                
+            </div>
+
+        </section>
+
+
+
+        <script type="text/javascript">
+            var boy = document.getElementById("boy");
+            var girl = document.getElementById("girl");
+
+            boy.onclick = function(){
+                boy.style.border="5px solid #673ab7";
+                girl.style.border="5px #673ab7";
+                showGender(1);
+            }
+
+            girl.onclick = function(){
+                girl.style.border="5px solid #673ab7";
+                boy.style.border="5px #673ab7";
+                showGender(0);
+            }
+     
+            function showName() {
+            var getName = document.getElementById("name").value;
+            localStorage.setItem("storageName",getName);
+            }
+
+            function showGender(gender) {
+            var getGender = gender;
+            localStorage.setItem("storageGender",getGender);
+            }
+
+        </script>
+    </body>
+    <script src="js/script.js"></script>
+    
+   
+
+</html>

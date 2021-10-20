@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Game of Health</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="instruction-1">
+            <div id="game-tex-1">
+                <section>
+                    <p id="put-name">Welcome to GOH! </p>
+                    <p>Your journey begins at the age of 6.</p> 
+                </section>
+            </div>
+            <div id="user-text-1">
+                <button onclick="a()">Cool! Got it!</button>
+            </div>
+        </section>
+
+
+        <section id="instruction-2" style="display: none">
+            <div id="game-text-2" style="display:none"  >
+                <p>You can make any decisions based on your own preference. 
+                However, don't forget to take care of your 4 key factors in the active range.</p>
+            </div>
+            <div id="user-text-2">
+                <button onclick="b()">Got it!</button>
+            </div>
+        </section>
+
+
+        <section id="instruction-3" style="display: none">
+            <div id="game-text-3" style="display: none">
+                <p>Shall we start now?!</p>
+            </div>
+            
+            <div id="user-text-3">
+                <a href="S1_1.html">Yes! <br>Let's do this!</a>
+            </div>
+        </section>
+    </body>
+
+
+    <script>
+        document.getElementById("put-name").innerHTML += localStorage.getItem("storageName");
+
+        function a(){
+            document.getElementById("game-text-2").style.display="inline-block";
+            document.getElementById("instruction-2").style.display="inline-block";
+            document.getElementById("instruction-1").style.display="none";
+        }
+
+
+        function b(){
+            document.getElementById("game-text-3").style.display="inline-block";
+            document.getElementById("instruction-3").style.display="inline-block";
+            document.getElementById("instruction-2").style.display="none";
+        }
+    </script>
+
+
+    <script src="js/script.js"></script>
+
+</html>
