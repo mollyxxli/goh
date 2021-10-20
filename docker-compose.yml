@@ -16,7 +16,7 @@ services:
 
    myphp:
      build:
-       context: .src/php
+       context: ./src/php
        dockerfile: dockerfile
      depends_on:
        - mysql
