@@ -1,5 +1,5 @@
 <?php
-   $dbhost = '34.132.84.163';
+   $dbhost = '34.66.219.112';
    $dbuser = 'php';
    $dbpass = 'php';
    $dbname = 'cloud_computing'
